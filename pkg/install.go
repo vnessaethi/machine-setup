@@ -164,7 +164,7 @@ func InstallAWSCli() {
 	fmt.Println("Installing aws-cli...")
 
 	if _, err := os.Stat("./awscliv2.zip"); os.IsNotExist(err) {
-		installAWSCli := exec.Command("sudo", "/bin/sh", "-c", "curl 'https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip' -o 'awscliv2.zip' ; unzip awscliv2.zip ; ./aws/install --bin-dir /usr/local/bin --install-dir /usr/local/aws-cli --update")
+		installAWSCli := exec.Command("sudo", "/bin/sh", "-c", "curl 'https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip' -o 'awscliv2.zip' ; unzip -o awscliv2.zip ; ./aws/install --bin-dir /usr/local/bin --install-dir /usr/local/aws-cli --update")
 
 		installOut, err := installAWSCli.CombinedOutput()
 		if err != nil {

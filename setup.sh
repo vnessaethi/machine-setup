@@ -15,8 +15,8 @@ else
     sudo tar -C /usr/local -xzf go1.15.6.linux-amd64.tar.gz
 
     mkdir -p $HOME/go
-    printf 'export GOPATH=$HOME/go' >> $HOME/.bashrc;
-    printf 'export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin' >> $HOME/.bashrc;
+    printf 'export GOPATH=$HOME/go\n' >> $HOME/.bashrc;
+    printf 'export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin\n' >> $HOME/.bashrc;
 fi
 
 # To execute Golang without sudo
