@@ -17,3 +17,5 @@
 # Packages downloaded
 *.deb
 *.gpg
+*.zip
+*aws/
