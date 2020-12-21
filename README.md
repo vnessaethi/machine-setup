@@ -37,6 +37,7 @@ This is my machine setup for Ubuntu distribution using golang. This is a simple 
 * keybase
 * wormhole
 * slack
+* aws-cli
 
 ## How to execute
 ```bash
