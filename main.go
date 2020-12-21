@@ -12,10 +12,11 @@ func main()  {
     } else {
 		fmt.Println("Initialize machine setup on", runtime.GOOS)		
 		setup.InstallVSCode()
-		setup.VSCodePlugins()
+		setup.VSCodeExtensions()
 		setup.InstallConfigureTmux()
 		setup.InstallKeybase()
 		setup.InstallWormhole()
-		setup.InstallSlack()    
+		setup.InstallSlack()
+		setup.InstallAWSCli() 
 	}
 }
