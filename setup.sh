@@ -19,6 +19,7 @@ else
     printf 'export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin' >> $HOME/.bashrc
 fi
 
+# To execute Golang without sudo
 if test -f "/etc/sudoers.d/env_keep"; then
     printf "Sudoers file exists!\n";
 else
